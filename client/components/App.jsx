@@ -13,6 +13,7 @@ class App extends React.Component {
     }
   this.renderPokemon = this.renderPokemon .bind(this)  
   this.Capitalize = this.Capitalize.bind(this)
+  this.getPokemonByName =this.getPokemonByName.bind(this)
   }
   
 
@@ -35,13 +36,14 @@ renderPokemon (err,data){
   })
 }
 
-// getPokemonByName(name,data = connection){
-//   return('pokemon')
-    // .insert({
-//      name: results.name,
-//      instock: pokemon.results
-    // })
-// } 
+getPokemonByName(name,data = connection){
+  return('pokemon')
+    .insert({
+     name: results.name,
+     instock: pokemon.results
+    })
+} 
+
 
 
 

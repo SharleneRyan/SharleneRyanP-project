@@ -12,14 +12,14 @@ export function getPokemonList (callback) {
     })
 }
 
-// export function getPokemonByName (name, callback) {
-//   request
-//     .post(pokemonUrl)
-//     .end((err, res) => {
-//       console.log('got Pokemon')
-//       callback(err,res.body)
-//     })
-// }
+export function getPokemonByName (name, callback) {
+  request
+    .post(pokemonUrl)
+    .end((err, res) => {
+      console.log('got Pokemon')
+      callback(err,res.body)
+    })
+}
 
 // export function deletePokemon (Pokemon,callback){
 //   request
