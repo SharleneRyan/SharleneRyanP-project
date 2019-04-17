@@ -19,14 +19,14 @@ class App extends React.Component {
 
   renderFacts(err, data) {
     this.setState({
-      cat: data.results
+      cat: data
     })
   }
 
   render() {
     return (
       <div>
-        <h1></h1>
+        <h1>Today's Cat Fact:</h1>
       </div>
     )
   }

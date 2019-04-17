@@ -6,6 +6,6 @@ export function getCatFacts(callback) {
   request
     .get(catFactsUrl)
     .end((err, res) => {
-      callback(err, res.body)
+      callback(err)
     })
 }
