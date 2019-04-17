@@ -5,5 +5,7 @@ const server = express()
 
 server.use(express.json())
 server.use(express.static(path.join(__dirname, './public')))
+server.use('/pokeapi.co/api/v2/', widgets)
+
 
 module.exports = server
