@@ -1,10 +1,28 @@
 import React from 'react'
+import * as api from '../api'
 
-const App = () => {
-  return (
-    <h1>React development has begun!</h1>
-  )
-}
 
-export default App
+export default class App extends React.Component{
+ constructor (props) {
+   super(props)
+     this.state ={
+       error:null,
+       data: this.props
+      }
+   }
+
+   componentDidMount(){
+    api.getData(this.renderData)
+   }
+
+   renderData(err, data){
+     console.log(recipes)
+   }
+
+  render(){
+    returns
+  }
+ }
+
+
 
