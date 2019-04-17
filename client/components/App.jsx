@@ -12,6 +12,7 @@ class App extends React.Component {
       pokemon:[{}]
     }
   this.renderPokemon = this.renderPokemon .bind(this)  
+  this.Capitalize = this.Capitalize.bind(this)
   }
   
 
@@ -22,9 +23,12 @@ componentDidMount(){
 this.renderPokemon 
 }
 
+Capitalize(str){
+  return str.charAt(0).toUpperCase() + str.slice(1);
+  }
 
 renderPokemon (err,data){
-  console.log(data)
+    console.log(data)
   this.setState({
     pokemon:data.results,
     
@@ -47,7 +51,7 @@ renderPokemon (err,data){
         <div>
         <h1>Pokemon!</h1>
         <ul>
-          {this.state.pokemon.map((pokemon,index) => <li key={index}> {index}. {pokemon.name}</li>)}
+          {this.state.pokemon.map((pokemon,index) => <li key={index}> {index}. {this.Capitalize(`${pokemon.name}`)}</li>)}
           <li></li>
           <li></li>
         </ul>
