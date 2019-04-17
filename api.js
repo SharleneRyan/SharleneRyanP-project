@@ -15,26 +15,26 @@ export function getPokemonList (callback) {
 // export function getPokemonByName (name, callback) {
 //   request
 //     .post(pokemonUrl)
-//     .send(pokemon)
 //     .end((err, res) => {
-//       callback(err)
+//       console.log('got Pokemon')
+//       callback(err,res.body)
 //     })
 // }
 
-// export function deleteWidget (widget,callback){
+// export function deletePokemon (Pokemon,callback){
 //   request
-//   .del(widgetUrl)
-//   .send(widget)
+//   .del(PokemonUrl)
+//   .send(Pokemon)
 //   .end((err, res) => {
 //     callback(err)
       
 //   })
 // }
 
-// export function updateWidget(widget,callback){
+// export function updatePokemon(pokemon,callback){
 //   request
-//   .put(widgetUrl)
-//   .send(widget)
+//   .put(PokemonUrl)
+//   .send(Pokemon)
 //   .end((err, res) => {
 //     callback(err)
       

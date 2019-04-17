@@ -1,42 +1,53 @@
 import React from 'react'
 
-import {getPokemonList} from '../../api'
-
-
-
-
-
-
-
-
+import {getPokemonList, getPokemonByName} from '../../api'
 
 
 
 class App extends React.Component {
   constructor(props){
     super(props)
-    this.setState={
-      pokemon:this.props 
+
+    this.state={
+      pokemon:[{}]
     }
+  this.renderPokemon = this.renderPokemon .bind(this)  
   }
+  
+
+
 
 componentDidMount(){
   getPokemonList(this.renderPokemon)
+this.renderPokemon 
 }
 
-renderPokemon (err,pokemon){
-  console.log(pokemon.results[0].name)
-  
-  
 
+renderPokemon (err,data){
+  console.log(data)
+  this.setState({
+    pokemon:data.results,
+    
+  })
 }
+
+// getPokemonByName(name,data = connection){
+//   return('pokemon')
+    // .insert({
+//      name: results.name,
+//      instock: pokemon.results
+    // })
+// } 
+
+
+
 
   render(){
       return (
         <div>
         <h1>Pokemon!</h1>
         <ul>
-          <li>{this.}</li>
+          {this.state.pokemon.map((pokemon,index) => <li key={index}> {index}. {pokemon.name}</li>)}
           <li></li>
           <li></li>
         </ul>
@@ -49,9 +60,3 @@ export default App
 
 
 
-// renderWidgets (err, widgets) {
-//   this.setState({
-//     error: err,
-//     widgets: widgets || []
-//   })
-// }
