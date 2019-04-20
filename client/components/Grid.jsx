@@ -12,8 +12,11 @@ const  Grid = ()=>{
       
       <div className="grid-container">
   <div>1</div>
+  
   <div>2</div>
+  
   <div>Maori Service</div>  
+  
   <div>Government Service</div>
   
   

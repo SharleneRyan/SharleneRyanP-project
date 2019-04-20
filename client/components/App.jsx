@@ -9,9 +9,17 @@ const App = () => {
   return (
 
     <div>
-    <h1>COMMUNITY SERVICE APP</h1>
+    <h1>
+      <p></p>COMMUNITY SERVICE APP
+      <br/>
+      <p></p>
+      <p></p>
+    </h1>
+    <p></p>
     <Grid/>
+    <p></p>
     <Buttons/>
+    <p></p>
     <Footer/>
     </div>
   )

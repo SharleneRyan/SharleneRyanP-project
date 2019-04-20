@@ -9,7 +9,7 @@ body{
 /* Style the header */
 .header {
   background-color: white;
-  padding: 30px;
+  /* padding: 1030px; */
   text-align: center;
   font-size: 35px;
   margin:0;
@@ -17,6 +17,8 @@ body{
   -webkit-align-self: center; 
   align-self: center;
   color:white;
+
+ 
 }
    
 
@@ -32,7 +34,9 @@ h1{
   border-radius: 5px solid black;
 }
 
-
+p{
+  padding: 10px;
+}
 
 .grid-container {
   display: grid;
@@ -48,9 +52,10 @@ h1{
 .grid-container > div {
   background-color: rgba(255, 255, 255, 0.8);
   text-align: center;
-  padding: 20px 0;
+  padding: 20px ;
   font-size: 30px;
   align-content: center;
+  height: 200px;
 }
 
 
