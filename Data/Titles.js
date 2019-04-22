@@ -12,21 +12,27 @@ module.exports = {
 
 var mainTitle =[
   {
-    
-    title: 'Maori Services'
+    id:1,
   },
   {
-    title: 'Government Services'
+    title: 'Maori Services',
   },
   {
-    title: 'Youth Services'
+    title: 'Government Services',
   },
   {
-    title: 'Services'
+    title: 'Youth Services',
+  },
+  {
+    title: 'Social Services',
   }
 ]
 
-var MaoriTitle =[{
+var MaoriTitle =[
+  {
+    id:2
+  },
+  {
     
   title:'Maori Mental Health'
 },
@@ -37,22 +43,22 @@ var MaoriTitle =[{
   title:'Local Marea'
 },
 {
-  title:''
+  title:'Maori Education'
 }
 ]
 
 var GoveTitle = [
   {
-  title:''
+  title:'Health'
 },
 {
-  title:''
+  title:'Finance'
 },
 {
-  title:''
+  title:'Education'
 },
 {
-  title:''
+  title:'Housing'
 }
 ]
 
@@ -85,3 +91,4 @@ var famTitle = [
     title:''
   }
 ]
+

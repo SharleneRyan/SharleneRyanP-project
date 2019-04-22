@@ -29,8 +29,14 @@
     ]
   },
   "dependencies": {
+    "add": "2.0.6",
     "express": "^4.16.4",
-    "superagent": "^5.0.2"
+    "lodash": "^4.17.11",
+    "or": "0.2.0",
+    "react-bulma-components": "2.3.0",
+    "react-reveal": "^1.2.2",
+    "superagent": "^5.0.2",
+    "yarn": "1.7.0"
   },
   "devDependencies": {
     "@babel/core": "^7.4.3",
