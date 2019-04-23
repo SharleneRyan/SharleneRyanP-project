@@ -20,7 +20,7 @@ const App = () => {
       <p></p>
       <br/>
       </h1>
-      <img src="" alt=""/>
+      
       </header>
     </div>
     
