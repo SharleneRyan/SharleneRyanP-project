@@ -1,6 +1,6 @@
 import React, {Component} from 'react'
 import Zoom from 'react-reveal/Zoom'
-// import {Titles} from './Titles'
+import mainTitle from '../../data/Titles'
 
 class Grid extends Component {
 
@@ -10,6 +10,7 @@ class Grid extends Component {
 
 
 render (){
+  
   return (
     <div>
 
@@ -17,25 +18,25 @@ render (){
       <div className="grid-container" >
 
         <Zoom>
-          <div> <p style={{
+          <div> <p onClick="" style={{
             textAlign:'center'
           }}> {this.state.Title[0]}</p>
          </div>
         </Zoom>
         <Zoom>
-          <div><p style={{
+          <div><p onClick='' style={{
             textAlign:'center'
           }}>{this.state.Title[1]}</p> </div>
         </Zoom>
         <Zoom>
-          <div><p style={{
+          <div><p onClick='' style={{
             textAlign:'center'
           }}
           >{this.state.Title[2]}</p> </div>
         </Zoom>
         <Zoom>
           <div>
-          <p style={{
+          <p onClick='' style={{
             textAlign:'center'
           }}
           >{this.state.Title[3]}</p></div>
@@ -46,5 +47,8 @@ render (){
   )
 }
 }
+
+
+
 
 export default Grid

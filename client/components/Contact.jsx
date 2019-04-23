@@ -7,8 +7,8 @@ function Contact(){
     return(
         <div >
             <ul>
-        {/* <li> name: "",</li>
-            <li>service: "",</li>
+        <li> name: "",</li>
+            {/* <li>service: "",</li>
             <li>compony: "",</li>
             <li>cellphone:"",</li>
             <li>landline:"",</li>

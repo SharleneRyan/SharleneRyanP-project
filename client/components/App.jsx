@@ -4,13 +4,15 @@ import Grid from './Grid'
 import Footer from './Footer' 
 import Buttons from './Button'
 import Zoom from 'react-reveal/Zoom'
+import Path from './Path'
+// import Data from '../data/Titles'
+
+
 
 const App = () => {
   return (
-
     <div>
-
-      
+     
     <div className="header">
     <header>
       <img src="https://www.police.govt.nz/sites/all/themes/twbs_police/logo.png" alt=""/>
@@ -25,28 +27,16 @@ const App = () => {
     </div>
     
     <p></p>
-    <Grid/>
+    <Grid />
     <p></p>
     {/* <Buttons/> */}
     <p></p>
-    {/* <Footer/> */}
+    <Footer/>
     </div>
   )
   
 }
   
-// render() {
-//     return (
-//       <div>
-//       <h1>COMMUNITY SERVICE APP</h1>
-//       <ul>
-//         {this.state.FamilyServer.map((FamilyServer,index) => <li key={index}> {index}. {this.Capitalize(`${FamilyServer.name}`)}</li>)}
-//         <li></li>
-//         <li></li>
-//       </ul>
-//       </div>
-//     )
-//   }
 
 
 // class App extends React.Component {
@@ -59,7 +49,31 @@ const App = () => {
   
 //   }
 // }
+// class App extends React.Component {
+//   constructor(props) {
+//     super(props);
+//     this.mainTitle = 'mainTitle';
+//     this.handleClick = this.handleClick.bind(this);
+//   }
 
+//   handleClick() {
+//     this.mainTitle = '';
+//   }
+
+//   render() {
+//     return (
+//       <div>
+//         <button onClick={this.handleClick}></button>
+//         <p>{this.mainTitle}</p>
+//       </div>
+//     );
+//   }
+// }
+
+// ReactDOM.render(
+//   <APP />,
+//   document.getElementById('root')
+// );
 
 export default App
 
