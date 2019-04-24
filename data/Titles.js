@@ -1,5 +1,4 @@
- export default{
- mainTitle: [
+ export default [
   
   {id: 1,
     title: 'Maori Services',
@@ -7,7 +6,6 @@
     subtitle2:'Kaumatua',
     subtitle3:'Local Marea',
     subtitle4:'Maori Education'
-
 
   },
   {
@@ -35,8 +33,4 @@
     subtitle4:'Education'
   }
 ]
-
-
- }
-
 

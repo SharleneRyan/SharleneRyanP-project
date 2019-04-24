@@ -1,11 +1,11 @@
-import React from 'react'
-import ReactDOM from 'react-dom'
-import Grid from './Grid'
-import Footer from './Footer' 
-import Buttons from './Button'
-import Zoom from 'react-reveal/Zoom'
-import Path from './Path'
-// import Data from '../data/Titles'
+import React from 'react';
+import ReactDOM from 'react-dom';
+import Grid from './Grid';
+import Footer from './Footer' ;
+import Buttons from './Button';
+import Zoom from 'react-reveal/Zoom';
+import Path from './Path';
+import mainTitle from '../../data/Titles';
 
 
 
@@ -17,13 +17,18 @@ const App = () => {
     <header>
       <img src="https://www.police.govt.nz/sites/all/themes/twbs_police/logo.png" alt=""/>
       <h1>
-      <p></p>
-      <Zoom>COMMUNITY SERVICE APP</Zoom>
-      <p></p>
-      <br/>
+      <Zoom>
+        <p></p>
+      <div className="Title" >
+      <h1>
+     Community Service App
       </h1>
-      
-      </header>
+      </div>
+      <p></p>
+      </Zoom>
+       <br/>
+      </h1>
+     </header>
     </div>
     
     <p></p>
@@ -75,5 +80,5 @@ const App = () => {
 //   document.getElementById('root')
 // );
 
-export default App
+export default App 
 
