@@ -1,28 +1,37 @@
 import React from 'react'
 
 
+// class App extends Component {
+//     constructor(props) {
+//         super(props);
+//         this.state = {
+//             title: "Community Services App"
+//         };
+//     }
+//  render(){  
+//      return(
+//         <div >
+//             <ul>
+//             <div className="container">
+//             <li>Name: "",</li>
+//             <li>Service: "",</li>
+//             <li>Compony: "",</li>
+//             <li>Cellphone:"",</li>
+//             <li>Landline:"",</li>
+//             <li>Email:"",</li>
+//             <li>Website:"",</li>
+//             <li>Address:"",</li>
+//             </div>
+//            </ul>
+//         </div>
+//     )
+
+     
 
 
-function Contact(){
-    return(
-        <div >
-            <ul>
-        <li> name: "",</li>
-            {/* <li>service: "",</li>
-            <li>compony: "",</li>
-            <li>cellphone:"",</li>
-            <li>landline:"",</li>
-            <li>email:"",</li>
-            <li>website:"",</li>
-            <li>address:"",</li> */}
-           </ul>
-        </div>
-    )
-}
+ 
 
 
 
 
-
-
-export default Contact
+// export default Contact()
