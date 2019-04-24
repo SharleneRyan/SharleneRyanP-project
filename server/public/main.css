@@ -8,7 +8,6 @@ body{
 
 /* Style the header */
 .header {
-
   background-color: white;
   /* padding: 1030px; */
   text-align: center;
@@ -66,7 +65,22 @@ p{
 
 }
 
+.grid-container div:hover{
+  transform: rotate(180deg);
+  background-color: black;
+}
 
+
+.ul{
+  display: grid;
+  height: 1000px;
+  border-radius: 2px solid black;
+  align-content: center;
+  grid-template-columns: auto auto ;
+  grid-gap: 20px;
+  background-color: rgb(6, 47, 80);
+  padding: 10px;
+}
 
 
 

@@ -1,7 +1,8 @@
 import request from 'superagent'
 
 
-const FamilyServicesURL = 'https://catalogue.data.govt.nz/api/3/action/datastore_search' 
+const FamilyServicesURL = 'https://catalogue.data.govt.nz/api/3/action/datastore_search?resource_id=d6748f83-1159-4ed0-a6fb-9e18c9707a6b&q=' 
+
 // const data = {
 //   resource_id: 'd6748f83-1159-4ed0-a6fb-9e18c9707a6b', // the resource id
 //   limit: 5, // get 5 results
@@ -18,10 +19,11 @@ const FamilyServicesURL = 'https://catalogue.data.govt.nz/api/3/action/datastore
 
 
 
+
 export function getFamilyServices(callback, FamilyServicesName) {
   console.log('getting FamilyServices info')
   request
-    .get(familyServicesURL)
+    .get(familyServicesURL+ FamilyServicesName)
     .end((err, res) => {
       callback(err, res.body)
     })

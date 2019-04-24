@@ -48,7 +48,7 @@ class App extends Component {
                     <p />
                     <Grid settitle={this.settitle} />
                     <p />
-                      <Contact />
+                      {/* <Contact /> */}
                     <Footer />
                 </div>
             </div>
